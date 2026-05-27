@@ -34,6 +34,7 @@
 #include <thrust/functional.h>
 #include <thrust/gather.h>
 #include <thrust/sort.h>
+#include <thrust/tuple.h>
 #include <thrust/random/linear_congruential_engine.h>
 #include <thrust/random/uniform_int_distribution.h>
 #include <thrust/transform_scan.h>
