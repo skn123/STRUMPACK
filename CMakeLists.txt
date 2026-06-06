@@ -150,7 +150,6 @@ if(STRUMPACK_USE_HIP)
     find_package(rocsolver REQUIRED)
     find_package(rocblas REQUIRED)
     find_package(rocprim REQUIRED)
-    find_package(rocthrust REQUIRED)
   endif()
 endif()
 
@@ -701,7 +700,7 @@ endif()
 
 if(hipblas_FOUND)
   target_link_libraries(strumpack PUBLIC
-    roc::hipblas roc::rocblas roc::rocsolver roc::hipsparse roc::rocthrust)
+    roc::hipblas roc::rocblas roc::rocsolver roc::hipsparse)
 endif()
 
 if(CombBLAS_FOUND)
